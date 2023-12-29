@@ -13,7 +13,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className="relative mn-h-screen">
+      <body className="relative min-h-screen">
         {children}
         <Footer />
       </body>

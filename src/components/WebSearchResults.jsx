@@ -13,7 +13,7 @@ export default function WebSearchResults({ results }) {
       {results.items?.map((result) => (
         <div classNam="mb-8 max-w-xl" key={result.link}>
           <div className="group flex flex-col mb-8 ">
-            {console.log(result)}
+            {/* {console.log(result)} */}
             <Link className="text-sm truncate" href={result.link}>
               {result.formattedUrl}
             </Link>
@@ -24,7 +24,9 @@ export default function WebSearchResults({ results }) {
               {result.title}
             </Link>
           </div>
-          <p className="text-gray-600">{Parser(result.htmlSnippet)}</p>
+          <p className="text-gray-600">
+            {Parser(toString(result.htmlSnippet))}
+          </p>
         </div>
       ))}
     </div>
