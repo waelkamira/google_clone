@@ -13,8 +13,10 @@ export default function SearchHeader() {
         <Link href="/">
           {" "}
           <Image
+            alt="photo"
             width={120}
             height={40}
+            priority
             src="https://upload.wikimedia.org/wikipedia/commons/2/2f/Google_2015_logo.svg"
           ></Image>
         </Link>

@@ -9,8 +9,10 @@ export default function Home(props) {
       {/* body */}
       <div className="flex flex-col items-center mt-24">
         <Image
+          alt="photo"
           width={300}
           height={100}
+          priority
           src="https://upload.wikimedia.org/wikipedia/commons/2/2f/Google_2015_logo.svg"
         ></Image>
         <HomeSearch />

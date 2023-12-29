@@ -17,6 +17,7 @@ export default function SearchBox() {
   }
   return (
     <form
+      name="/"
       className="flex border border-gray-200 rounded-full shadow-lg px-6 py-3 ml-10 mr-5 flex-grow max-w-3xl items-center"
       onSubmit={handleSubmit}
     >
