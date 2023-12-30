@@ -4,7 +4,7 @@ import React from "react";
 import { RiH1 } from "react-icons/ri";
 
 export default async function ImageSearchPage({ searchParams }) {
-  // await new Promise((resolve) => setTimeout(resolve, 10000));
+  // await new Promise((resolve) => setTimeout(resolve, 3000));
   const startIndex = searchParams.start || "1";
   const response = await fetch(
     `https://www.googleapis.com/customsearch/v1?key=${process.env.API_KEY}&cx=${process.env.CONTEXT_KEY}&q=${searchParams.searchTerm}&searchType=Image&start=${startIndex}`
